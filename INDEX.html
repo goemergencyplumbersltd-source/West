@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Emergency Leak & Drain Experts Ltd | 24/7 Plumber</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Emergency Leak & Drain Experts Ltd. Fast response for leaks, blockages and drain emergencies. Call 07516 911235." />
+  <style>
+    :root {
+      --blue: #0054a3;
+      --blue-dark: #003667;
+      --red: #e73535;
+      --yellow: #f4cb2f;
+      --bg: #f7f8fb;
+      --text-dark: #0b1220;
+      --text-muted: #5a6473;
+      --radius-lg: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: #ffffffcc;
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid #dde3ea;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.7rem 0;
+      gap: 1rem;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .nav-logo {
+      height: 44px;
+    }
+
+    .nav-text {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-weight: 700;
+      color: var(--blue-dark);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.8rem 1.5rem;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--red);
+      color: #fff;
+      box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+      background: #ff423f;
+    }
+
+    .btn-outline {
+      background: #fff;
+      border: 1px solid #cfd6e0;
+      color: var(--blue-dark);
+    }
+
+    .btn-outline:hover {
+      background: #eef3fb;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      background: rgba(0, 84, 163, 0.1);
+      color: var(--blue-dark);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      margin-bottom: 0.6rem;
+    }
+
+    .star {
+      color: #f6b40b;
+      font-size: 1.1rem;
+    }
+
+    main {
+      padding-bottom: 3rem;
+    }
+
+    /* Hero */
+    .hero {
+      background: var(--yellow);
+      padding: 3rem 0 2.5rem;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.9fr);
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 3vw + 1rem, 3rem);
+      line-height: 1.05;
+      margin-bottom: 0.75rem;
+      color: var(--blue-dark);
+    }
+
+    .hero .lead {
+      font-size: 1.05rem;
+      color: #2b3440;
+      max-width: 36rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #26303a;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 1.3rem;
+    }
+
+    .hero-card {
+      background: #ffffffdd;
+      border-radius: var(--radius-lg);
+      padding: 1.5rem 1.5rem 1.3rem;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+      text-align: center;
+    }
+
+    .hero-card h3 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      margin-bottom: 0.35rem;
+      color: var(--blue-dark);
+    }
+
+    .hero-card .phone {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--red);
+      margin-bottom: 0.4rem;
+    }
+
+    .hero-card small {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* Services */
+    section {
+      padding: 3rem 0 0;
+    }
+
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-heading h2 {
+      font-size: 1.6rem;
+    }
+
+    .section-heading p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      max-width: 400px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: var(--radius-lg);
+      padding: 1.4rem 1.4rem 1.3rem;
+      border: 1px solid #e0e5f0;
+      box-shadow: 0 10px 24px rgba(15,23,42,0.04);
+    }
+
+    .card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .card span.emoji {
+      font-size: 1.5rem;
+      margin-bottom: 0.45rem;
+      display: inline-block;
+    }
+
+    /* Why choose us */
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 1.7rem;
+      align-items: flex-start;
+    }
+
+    .list {
+      list-style: none;
+      font-size: 0.95rem;
+    }
+
+    .list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .list li::before {
+      content: "✔";
+      color: var(--blue);
+      font-size: 0.9rem;
+      margin-top: 0.15rem;
+    }
+
+    .box {
+      background: #fff;
+      border-radius: var(--radius-lg);
+      border: 1px solid #dde3ef;
+      padding: 1.3rem 1.4rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* Contact strip */
+    .contact-strip {
+      margin-top: 2.5rem;
+      margin-bottom: 3rem;
+      background: linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 75%);
+      border-radius: 26px;
+      padding: 1.7rem 1.8rem;
+      color: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.2rem;
+      justify-content: space-between;
+    }
+
+    .contact-strip h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .contact-strip p {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    .contact-strip .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    footer {
+      padding: 1.5rem 0 2rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    footer span {
+      display: block;
+      margin-top: 0.25rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero-grid,
+      .cards,
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="nav-left">
+      <img src="logo.png" alt="Emergency Leak & Drain Experts Ltd logo" class="nav-logo" />
+      <div class="nav-text">Emergency Leak & Drain Experts Ltd</div>
+    </div>
+    <a class="btn btn-primary" href="tel:07516911235">📞 07516 911235</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="pill">
+          <span class="star">★</span>
+          5.0 rating · Emergency plumber
+        </div>
+        <h1>Fast Emergency Leak & Drain Experts You Can Rely On — We Work 24/7</h1>
+        <p class="lead">
+          Burst pipe? Blocked drain? We provide rapid-response plumbing with clear pricing and qualified engineers.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:07516911235">📞 Call Now: 07516 911235</a>
+          <a class="btn btn-outline">We Work 24/7</a>
+        </div>
+
+        <div class="hero-meta">
+          <span>🕒 Available 24/7</span>
+          <span>🛠 Leak detection · Blocked drains · Repairs</span>
+          <span>✅ Fully insured & local</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h3>24/7 Emergency Line</h3>
+        <a class="phone" href="tel:07516911235">07516 911235</a>
+        <small>Tap to call now — we aim to answer within minutes.</small>
+        <br><br>
+        <small>You can also message us on WhatsApp using the same number.</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <div class="section-heading">
+        <h2>What We Can Help You With</h2>
+        <p>From urgent leaks to stubborn blockages, we handle all plumbing emergencies professionally.</p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <span class="emoji">💧</span>
+          <h3>Emergency Leak Repairs</h3>
+          <p>Fast repairs for burst pipes, ceilings, radiators, stopcocks & joints.</p>
+        </div>
+
+        <div class="card">
+          <span class="emoji">🚿</span>
+          <h3>Blocked Drains & Toilets</h3>
+          <p>Unblocking sinks, toilets, showers & outside drains using pro equipment.</p>
+        </div>
+
+        <div class="card">
+          <span class="emoji">🧰</span>
+          <h3>General Plumbing</h3>
+          <p>Taps, valves, traps, waste pipes, appliance connections & more.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why choose us -->
+  <section>
+    <div class="container" style="margin-top: 2.7rem;">
+      <div class="two-col">
+        <div>
+          <h2>Why Choose Us?</h2>
+          <ul class="list" style="margin-top: 0.9rem;">
+            <li>Clear pricing before we start the job – no hidden extras.</li>
+            <li>Fully qualified, insured & experienced engineers.</li>
+            <li>Shoe covers & dust sheets — we respect your home.</li>
+            <li>Honest advice — no unnecessary work.</li>
+            <li>Local business — real people, fast arrival times.</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <strong>Customer peace of mind</strong><br><br>
+          Plumbing emergencies are stressful. Our goal is to make it simple:
+          clear explanations, fair pricing, fast response & friendly service.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-strip">
+        <div>
+          <h2>We Work 24/7 — Need an emergency plumber?</h2>
+          <p>Call or message us anytime. We're always available.</p>
+        </div>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="tel:07516911235">📞 Call 07516 911235</a>
+
+          <a class="btn btn-outline" href="https://wa.me/447516911235" target="_blank">
+            💬 WhatsApp Message
+          </a>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <h3>Contact Details</h3>
+          <p>
+            <strong>Phone:</strong> <a href="tel:07516911235">07516 911235</a><br>
+            <strong>Email:</strong> <a href="mailto:emergencyexperts@mail.com">emergencyexperts@mail.com</a><br>
+            <strong>Hours:</strong> Open 24/7 · Emergency call-outs anytime
+          </p>
+        </div>
+
+        <div class="box">
+          <strong>Quick Quote Tips</strong><br><br>
+          Helpful info when you message:
+          <ul class="list" style="margin-top: 0.6rem;">
+            <li>Location of the issue (kitchen, bathroom, outside)</li>
+            <li>How long it’s been occurring</li>
+            <li>Photos or videos if possible</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © <span id="year"></span> Emergency Leak & Drain Experts Ltd. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
